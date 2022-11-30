@@ -30,7 +30,7 @@ bool playAgain()
 	}
 }
 
-Players playGame(Board board)
+Players playGame(Board& board)
 {
 	Players winner{ Players::noPlayer };
 	int turn{ 1 };
