@@ -43,9 +43,7 @@ public:
 
 	void setStatus(Players player)
 	{
-		std::cout << "\nDEBUG: before set, player status: " << getPlayerName(getStatus());
 		m_status = player;
-		std::cout << "\nDEBUG: after set, player status: " << getPlayerName(getStatus());
 	}
 
 	void print()
@@ -90,7 +88,7 @@ public:
 	{
 	}
 
-	Square getSquare(int squareNum)
+	Square& getSquare(int squareNum)
 	{
 		return m_square[squareNum];
 	}
